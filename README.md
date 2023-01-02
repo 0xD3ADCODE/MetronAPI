@@ -41,7 +41,7 @@ MetronApi.init(userName = {username}, password = {password})
 After that, you can make calls to any of defined methods. For example, getting info about [Suicide Squad (2016)](https://metron.cloud/series/suicide-squad-2016/) serie (with id `3006`):
 
 #### Async RXJava way:
-```kotlin
+```java
 MetronApi.getSerie(3006)
     .cache()
     .subscribeOn(Schedulers.newThread())
@@ -53,6 +53,6 @@ MetronApi.getSerie(3006)
 ```
 
 #### Blocking way:
-```kotlin
+```java
 MetronApi.getSerie(3006).blockingGet()
 ```
